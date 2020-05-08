@@ -7,6 +7,8 @@ const unsubscribe = store.subscribe(()=>{
 });
 
 store.dispatch(bugAdded('BugOne'));
+store.dispatch(bugAdded('BugTwo'));
+store.dispatch(bugAdded('BugThree'));
 
 // store.dispatch({
 //     type: actions.BUG_ADDED,
@@ -17,7 +19,7 @@ store.dispatch(bugAdded('BugOne'));
 
 unsubscribe();
 
-// store.dispatch(bugRemoved());
+store.dispatch(bugRemoved());
 
 // store.dispatch({
 //     type: actions.BUG_REMOVED,

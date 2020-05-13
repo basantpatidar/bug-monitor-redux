@@ -25,3 +25,13 @@ export const bugRemoved = () =>{
         }
     }
 }
+
+export const bugUpdated = (id, description) => {
+    return {
+        type: actions.BUG_UPDATED,
+        payload: {
+            id: id,
+            description: description
+        }
+    }
+}

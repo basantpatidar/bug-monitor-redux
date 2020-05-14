@@ -15,6 +15,13 @@ export default function reducer(state = [], action){
         case actions.BUG_REMOVED: 
             return state.filter(bug => bug.id !== action.payload.id);
 
+        case actions.BUG_UPDATED:
+            console.log(state);
+            
+            return(
+                state['id'] = action.payload.id
+            );
+
         default:
             console.log("This is Default");
             return state;

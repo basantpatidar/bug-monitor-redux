@@ -19,6 +19,7 @@ export default function reducer(state = [], action){
             console.log(state);
             
             return(
+                
                 state['id'] = action.payload.id
             );
 

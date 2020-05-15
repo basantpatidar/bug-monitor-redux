@@ -17,9 +17,10 @@ export default function reducer(state = [], action){
 
         case actions.BUG_UPDATED:
             console.log(state);
+            //update this
             
             return(
-                
+
                 state['id'] = action.payload.id
             );
 
